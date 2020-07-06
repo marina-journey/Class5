@@ -1,5 +1,11 @@
+const product = 'tangerine';
+
 function cook() {
-  let product = 'lime';
+  const product = 'lime';
+  (function abc() {
+    const product = 'qiwi';
+    console.log('Cook!', product);  
+  })();
   console.log('Cook!', product);
 }
 
@@ -8,9 +14,3 @@ const random = function() {
 }
 
 cook();
-product = 'apple';
-cook();
-product = 'tangerine';
-cook();
-random();
-random();
